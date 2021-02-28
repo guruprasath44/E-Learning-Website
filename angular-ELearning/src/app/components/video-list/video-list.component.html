@@ -1,0 +1,20 @@
+<table border="1" class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Category</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let video of videos">
+            <td>
+                <img [src]="video.imageUrl" height="50"/>
+            </td>
+            <td>{{video.name}}</td>
+            <td>{{video.description}}</td>
+
+        </tr>
+    </tbody>
+</table>
